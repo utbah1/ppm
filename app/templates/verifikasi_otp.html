@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verifikasi OTP - Wisata Makan Sunny</title>
+  <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-yellow-100 text-gray-800">
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <form action="/verifikasi-otp" method="POST" class="bg-white p-8 rounded-xl shadow-xl w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-4 text-center">Verifikasi Kode OTP</h2>
+      <p class="mb-4 text-sm text-gray-600 text-center">Kode OTP telah dikirim ke <strong>{{ email }}</strong></p>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-semibold mb-1">Kode OTP</label>
+        <input type="text" name="otp" required class="w-full p-2 border border-gray-300 rounded-md" placeholder="Masukkan OTP">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-semibold mb-1">Ulasan</label>
+        <textarea name="review" rows="4" required class="w-full border-gray-300 rounded-md p-2" placeholder="Tulis ulasan kamu..."></textarea>
+      </div>
+      <button type="submit" class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 transition">Kirim Ulasan</button>
+    </form>
+  </div>
+</body>
+</html>
